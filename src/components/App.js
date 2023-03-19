@@ -21,7 +21,7 @@ function App() {
   if(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(emailRef.current.value)){
     setError(undefined);
 
-    document.getElementById("submit").disabled = false;
+    document.getElementById("submit").disabled = false; 
   }
   else{
     setError("Email is invalid.");
@@ -35,7 +35,7 @@ function App() {
         e.preventDefault();
         setData({
           fname: fnameRef.current.value,
-          lname: lnameRef.current.value
+          lname: emailRef.current.value
         });
       }}>
         <fieldset>
