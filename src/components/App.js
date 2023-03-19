@@ -20,6 +20,8 @@ function App() {
  const change = () => {
   if(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(emailRef.current.value)){
     setError(undefined);
+
+    document.getElementById("submit").disabled = false;
   }
   else{
     setError("Email is invalid.");
